@@ -28,7 +28,7 @@ if __name__ == '__main__':
     print('page loaded')
     
     while 1:
-        WebDriverWait(driver, LONG_WAIT).until(EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'list-row--answered')]")))
+        WebDriverWait(driver, LONG_WAIT).until(EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'list-row--unanswered')]")))
         print('new q found')
         Notification(title='New question spotted!',
                      description=true_url,
